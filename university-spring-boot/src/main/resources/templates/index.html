@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>University - Student List</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="../static/getrequest.js" th:src="@{/getrequest.js}"></script>
+
+</head>
+<body>
+	<div class="container">
+		<h3 style="color: blue">All Students</h3>
+
+		<div class="col-sm-7" id="postResultDiv"></div>
+
+		<div class="col-sm-7" style="margin: 20px 0px 20px 0px">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>Name</th>
+						<th>Faculty</th>
+					</tr>
+				</thead>
+				<tbody id="table1"></tbody>
+			</table>
+		</div>
+		<div id="button" class="col-sm-7 text-right">
+			<button id="btnAddNewStudent" type="button" class="btn btn-primary"> Add New Student </button>	
+		</div>
+	</div>
+</body>
+</html>
